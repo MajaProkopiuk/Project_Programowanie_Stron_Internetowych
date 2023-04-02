@@ -21,7 +21,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg-color">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">Maja Prokopiuk</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,16 +44,46 @@
         </div>
     </nav>
 
-    <footer class="mt-auto footer-bg-color">
+    <div class="container">
+        <!-- INTRODUCTION -->
+        <div class="row pt-5 pb-md-5">
+            <div class="col-lg-4 pt-lg-5 col-md-12 text-end">
+                <h1>Hi, I'm Maja</h1>
+                <h5 id="textForRemoval" style="height: 30px;"></h5>
+                <p class="introduction-text">
+                    I have experience with HTML, CSS, JavaScript, React, PHP, Symfony, Oracle Database, and jQuery. I'm
+                    seeking new opportunities to apply my skills and collaborate with others to build great web
+                    applications.
+                </p>
+                <p class="introduction-text">
+                    As a quick learner and problem solver, I believe strong teamwork is essential to building successful
+                    projects. If you're interested in working with a dedicated and skilled web developer, please don't
+                    hesitate to reach out.
+                </p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <img src="/images/undraw_dev_focus_re_6iwt.svg" class="img-fluid" alt="Web developer" />
+            </div>
+        </div>
+        <!-- SKILLS -->
+        <div class="row border-top pt-5">
+            <div class="col-12 text-center pb-3">
+                <h1>My Skills:</h1>
+            </div>
+            <div id="skills-container" class="pb-5"></div>
+        </div>
+    </div>
+
+    <footer class="mt-auto">
         <div class="container">
             <div class="row pt-2 pb-2">
-                <div class="col-md-5 text-center text-sm-start">
+                <div class="col-md-5 text-center text-md-start">
                     Copyright © <span id="current-date"></span> Maja Prokopiuk
                 </div>
                 <div class="col-md-2 text-center">
                     <span class="material-symbols-outlined">code</span>
                 </div>
-                <div class="col-md-5 text-center text-sm-end">
+                <div class="col-md-5 text-center text-md-end">
                     <a href="mailto: maja.prokopiuk@uth.pl" style="text-decoration: none; color: black">Email:
                         maja.prokopiuk@uth.pl</a>
                 </div>
@@ -65,7 +95,10 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
         </script>
     <script src="scripts/index.js"></script>
-
+    <script src="/scripts/deletingText.js"></script>
+    <script>
+        const displayedText = ["Web developer", "IT Student", "Aspiring full stack"];
+    </script>
 </body>
 
 </html>
