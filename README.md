@@ -1,2 +1,2 @@
 # UTHProgramowanieStronInternetowych
-Studies Project - Programowanie stron internetowych. Really quick site to make for passing a study. 
+Studies Project - Programowanie stron internetowych. Really quick and simple project with some requirements to check the basic knowledge.
