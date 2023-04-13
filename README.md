@@ -1,4 +1,3 @@
-# UTHProgramowanieStronInternetowych
 Really quick and simple project with some requirements to check the basic knowledge.
 
 Minimal guidelines for the project. The website project should be visually pleasing and include at least:
