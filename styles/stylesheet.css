@@ -10,7 +10,7 @@ nav, nav * {
 }
 
 .active-link {
-    color: #ffd1dc!important;
+    color: #ffd1dc !important;
 }
 
 ---------footer 
@@ -18,15 +18,61 @@ footer, footer * {
     font-family: 'Kanit', sans-serif;
 }
 
--------- rest of the site
+-------- rest of the site 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 .introduction-text {
-    font-style:oblique;
+    font-style: oblique;
+}
+
+----- contact 
+
+.project-card {
+    position: relative;
+    transition: all 2s ease-in-out;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover {
+    transform: rotateY(180deg);
+}
+
+.project-card .card-front {
+    position: relative;
+    z-index: 1;
+}
+
+.project-card .card-front img {
+    transition: all 2s ease-in-out;
+}
+
+.project-card:hover .card-front img {
+    opacity: 0;
+}
+
+.project-card .card-front .card-title,
+.project-card .card-front .card-text {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.project-card:hover .card-front .card-title,
+.project-card:hover .card-front .card-text {
+    opacity: 0;
+}
+
+.project-card .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    z-index: 0;
+    transform: rotateY(180deg);
 }
