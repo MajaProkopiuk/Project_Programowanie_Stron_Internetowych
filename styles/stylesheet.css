@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(216, 201, 214) !important;
     font-family: 'Lato', sans-serif;
     position: relative;
     font-size: 17px;
@@ -11,12 +10,7 @@ nav, nav * {
 }
 
 .active-link {
-    color: rgb(211, 13, 122) !important;
-    ;
-}
-
-.nav-bg-color, .footer-bg-color {
-    background-color: rgb(247, 243, 245);
+    color: #ffd1dc !important;
 }
 
 ---------footer 
@@ -24,10 +18,83 @@ footer, footer * {
     font-family: 'Kanit', sans-serif;
 }
 
+-------- rest of the site 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.introduction-text {
+    font-style: oblique;
+}
+
+----- contact 
+#content {
+    height: 150px;
+}
+
+.heart {
+    color: #ffd1dc;
+}
+
+.border-pink {
+    border: 1px solid #ffd1dc!important;
+}
+
+.btn-outline-pink:hover {
+    background-color: #ffd1dc!important;
+    color: white!important;
+}
+
+.btn-outline-pink {
+    color: #ffd1dc!important;
+    border-color: #ffd1dc!important;
+}
+
+----projects 
+.project-card {
+    position: relative;
+    transition: all 2s ease-in-out;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover {
+    transform: rotateY(180deg);
+}
+
+.project-card .card-front {
+    position: relative;
+    z-index: 1;
+}
+
+.project-card .card-front img {
+    transition: all 2s ease-in-out;
+}
+
+.project-card:hover .card-front img {
+    opacity: 0;
+}
+
+.project-card .card-front .card-title,
+.project-card .card-front .card-text {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.project-card:hover .card-front .card-title,
+.project-card:hover .card-front .card-text {
+    opacity: 0;
+}
+
+.project-card .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    z-index: 0;
+    transform: rotateY(180deg);
 }
