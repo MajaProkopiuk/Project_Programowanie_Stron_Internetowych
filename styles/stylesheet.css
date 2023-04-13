@@ -32,7 +32,29 @@ footer, footer * {
 }
 
 ----- contact 
+#content {
+    height: 150px;
+}
 
+.heart {
+    color: #ffd1dc;
+}
+
+.border-pink {
+    border: 1px solid #ffd1dc!important;
+}
+
+.btn-outline-pink:hover {
+    background-color: #ffd1dc!important;
+    color: white!important;
+}
+
+.btn-outline-pink {
+    color: #ffd1dc!important;
+    border-color: #ffd1dc!important;
+}
+
+----projects 
 .project-card {
     position: relative;
     transition: all 2s ease-in-out;
