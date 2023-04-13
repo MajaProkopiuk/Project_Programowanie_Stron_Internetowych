@@ -69,70 +69,72 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row pt-5 pb-md-5">
-            <div class="col-12 text-center">
-                <span class="material-symbols-outlined heart">
-                    favorite
-                </span>
-            </div>
+    <main>
+        <div class="container">
+            <div class="row pt-5 pb-md-5">
+                <div class="col-12 text-center">
+                    <span class="material-symbols-outlined heart">
+                        favorite
+                    </span>
+                </div>
 
-            <h1 class="col-12 text-center" style="color: #ffd1dc;">Contact</h1>
-            <p class="col-12 text-center fst-italic">
-                Thank you for your interest in contacting me! <br>
-                Please fill out the form below and I will get back to you as soon as possible. <br>
-                I appreciate your feedback and look forward to hearing from you!
-            </p>
+                <h1 class="col-12 text-center" style="color: #ffd1dc;">Contact</h1>
+                <p class="col-12 text-center fst-italic">
+                    Thank you for your interest in contacting me! <br>
+                    Please fill out the form below and I will get back to you as soon as possible. <br>
+                    I appreciate your feedback and look forward to hearing from you!
+                </p>
 
-            <form id="contact-form">
-                <div class="row">
-                    <div class="form-group mb-3 col-lg-6 col-sm-12 offset-lg-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control border-pink" id="name" name="name" maxlength="50"
-                            required>
-                        <span class="error" id="name-error"></span>
+                <form id="contact-form">
+                    <div class="row">
+                        <div class="form-group mb-3 col-lg-6 col-sm-12 offset-lg-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control border-pink" id="name" name="name" maxlength="50"
+                                required>
+                            <span class="error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group mb-3 col-lg-6 col-sm-12 offset-lg-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control border-pink" id="subject" name="subject"
+                                maxlength="60" required>
+                            <span class="error" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group mb-3 col-lg-6 col-sm-12 offset-lg-3">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea id="content" class="form-control border-pink" name="content" maxlength="350"
+                                required></textarea>
+                            <span class="error" id="content-error"></span>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 col-sm-12 offset-lg-3 text-center">
+                            <button type="submit" class="btn btn-outline-pink">Prepare mail</button>
+                        </div>
                     </div>
+                </form>
 
-                    <div class="form-group mb-3 col-lg-6 col-sm-12 offset-lg-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control border-pink" id="subject" name="subject" maxlength="60"
-                            required>
-                        <span class="error" id="subject-error"></span>
-                    </div>
-
-                    <div class="form-group mb-3 col-lg-6 col-sm-12 offset-lg-3">
-                        <label for="content" class="form-label">Content</label>
-                        <textarea id="content" class="form-control border-pink" name="content" maxlength="350"
-                            required></textarea>
-                        <span class="error" id="content-error"></span>
-                    </div>
-
-                    <div class="col-lg-6 mb-3 col-sm-12 offset-lg-3 text-center">
-                        <button type="submit" class="btn btn-outline-pink">Prepare mail</button>
+                <div class="modal fade" id="success-modal" tabindex="-1" role="dialog"
+                    aria-labelledby="success-modal-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="success-modal-label">Success</h5>
+                            </div>
+                            <div class="modal-body">
+                                Your message has been prepared succesfully!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
 
-            <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal-label"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="success-modal-label">Success</h5>
-                        </div>
-                        <div class="modal-body">
-                            Your message has been prepared succesfully!
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
-    </div>
-
+    </main>
+    
     <footer class="mt-auto">
         <div class="container">
             <div class="row pt-2 pb-2">
